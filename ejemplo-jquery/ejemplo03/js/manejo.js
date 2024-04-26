@@ -17,10 +17,7 @@ $(document).ready(function() {
       $('#nombreUniversidad').css( "color", "green" );
   });
 
-  $("#nombreUniversidad").on( "mouseover", function() {
-      $('#nombreUniversidad').css( "color", "black" );
-      $('body').css( "background", "black" );
-  });
+  
 
 
 });
