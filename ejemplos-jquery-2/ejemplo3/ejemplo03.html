@@ -25,13 +25,14 @@
                 console.log(data[i]);
                 console.log(data[i].Code);
                 console.log(data[i].Name);
-                $('#mensajeFinal').append("<p> <b>Código:</b> "+ data[i].Code + " <b>Nombre:</b> " + data[i].Name + "</p>");
+                //append se usa para poner un add que combierte automaticamente en html para que me imprima no en la consola sino dentro del html
+                $('#mensajeFinal').append("<p> <b>Código:</b> "+ data[i].Code + " <b>Nombre:</b> " + data[i].Name + "</p>"); 
               }
             });      
       });
       
       $( "#limpiarInformacion" ).click(function() {
-          $('#mensajeFinal').empty();
+          $('#mensajeFinal').empty(); // empty borra todo y devuelve a los dos opciones
       });
     });
   </script>
